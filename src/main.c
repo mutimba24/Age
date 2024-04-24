@@ -2,30 +2,29 @@
 
 int main()
 {
-    float score;
-    printf("Enter your score:");
-    scanf("%f",&score);
-    if(score>=70 && score <=100)
+    int optn;
+    printf("Enter Room");
+    scanf("&d",& option);
+    if(optn==1)
     {
-      printf("%.2f is A",score)
+      printf("Room1 Lights On!!");
     }
-    else if(>=60 && score <70)
+    else if(optn==2)
     {
-      printf("%.2f is B",score);
+      printf("Room2 Lights On!!");
     }
-    else if(>=50&& score <60)
-    {
-    printf("%.2f is C",score);
+     else if(optn==3)
+     {
+       printf("Room3 Lights On!!");
+     }
+      else if(optn==4)
+      {
+        printf("Room4 Lights On!!");
+      }
+      else
+      {
+        printf("Invalid optn!!")
+      }
+      return 0;
+      
     }
-    else if(>=40&& score <50)
-    {
-      printf("%.2f is D,score");
-    }
-    else if(score>=0 && score <40)
-    {
-      printf("%.2f if F",score);
-    }
-  
-    }
-    return 0;
-}
